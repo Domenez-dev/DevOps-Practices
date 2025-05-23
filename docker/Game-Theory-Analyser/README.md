@@ -1,29 +1,29 @@
-# Analyseur de Théorie des Jeux - Application Flask
+# Game Theory Analyser with Flask
 
-## Démarrage Rapide
+## Quick Start
+### Option 1: Build the Docker image
+1. **Build the Docker image** :
+    ```bash
+    docker build -t game-theory-analyser .
+    ```
 
-1. **Créer un environnement virtuel** :
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # Linux/Mac
-   venv\Scripts\activate     # Windows
-   ```
+2. **Run the Docker container** :
+    ```bash
+    docker run -p 5050:5050 game-theory-analyser
+    ```
 
-2. **Installer les dépendances** :
-   ```bash
-   pip install flask numpy
-   ```
+3. **Access the application** :
+    ```
+    http://localhost:5050
+    ```
 
-3. **Lancer l'application** :
-   ```bash
-   python app.py
-   ```
+### Option 2: Run the Docker container directly
+1. **Run the Docker container** :
+    ```bash
+    docker run -p 5050:5050 domenez/game-theory-analyser:1.3-RELEASE
+    ```
 
-4. **Accéder à l'application** :
-   ```
-   http://localhost:5050
-   ```
-
-## Pour arrêter :
-- Appuyez sur `Ctrl+C` dans le terminal
-- Désactiver l'environnement virtuel : `deactivate`
+## Stop the Docker container :
+  ```bash
+  docker stop game-theory-analyser
+  ```
