@@ -18,6 +18,7 @@
     ```
 
 ### Option 2: Run the Docker container directly
+
 1. **Run the Docker container** :
     ```bash
     docker run -p 5050:5050 domenez/game-theory-analyser:1.3-RELEASE
